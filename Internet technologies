@@ -8,3 +8,16 @@ TCP 封包中 flags（6 bits） 裡面的 Synchronize 位元：這個位元會�
 可接受的 Window Size ：設定 client 自己可接受的 Window Size 大小，告知 server 自己可以承受的程度。
 https://ithelp.ithome.com.tw/articles/10155938
 
+2. HTTP 是建構在 TCP 之上的協定。早期的 HTTP 版本每個 Request 都會開啟一個 new socket connection 
+（回想一下之前我們講到關於 TCP 的內容就可以理解這有多麼沒效率了），因此後來 Keep Alive 這個機制就出來了，
+它讓瀏覽器可以透過單個 socket connection 進行多個 Request ，瀏覽器跟 Server 都會透過 Connection: keep-alive 
+這個 header 告訴對方自己支援 Keep-Alive 。
+Three Way Handshake 過後，才開始進入 HTTP Request 階段，最後才是下載內容。
+
+除了 HTML ，瀏覽器也會 Parse 所有的 CSS Rule ，建構成 "CSSOM"(CSS Object Model)。
+
+
+3. 初始狀態（initial state）為「Data State」，遇到「<」這個字元，就會將狀態改變為「Tag Open Sate」，
+接著 consume 英文字母 a-z ，便會觸發「Start Tag Token」的創建，而改變成「Tag Name State」。
+遇到「>」這個字元後，當前的 token 就會被排出，返回至「Data State」，繼續往下重複上述動作。
+https://ithelp.ithome.com.tw/articles/10156320
