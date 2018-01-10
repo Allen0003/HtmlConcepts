@@ -6,4 +6,5 @@ Sequence Number：client 隨機選取的初始序號1（Sequence Number1, 我們
 Acknowledge Number：第一個步驟，才剛請求建立連線而已，不會有確認號碼，因此這邊暫時全部填0。
 TCP 封包中 flags（6 bits） 裡面的 Synchronize 位元：這個位元會被設定成1，表示這個封包是送出 SYN 的資訊。
 可接受的 Window Size ：設定 client 自己可接受的 Window Size 大小，告知 server 自己可以承受的程度。
+https://ithelp.ithome.com.tw/articles/10155938
 
