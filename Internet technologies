@@ -17,7 +17,9 @@ Three Way Handshake 過後，才開始進入 HTTP Request 階段，最後才是�
 除了 HTML ，瀏覽器也會 Parse 所有的 CSS Rule ，建構成 "CSSOM"(CSS Object Model)。
 
 
-3. 初始狀態（initial state）為「Data State」，遇到「<」這個字元，就會將狀態改變為「Tag Open Sate」，
+3.Tokenization 的演算法很複雜，此演算法以 state machine 的方式表示。每一個 state 都會消耗 input stream 中一至多個字元，
+並且會根據這些字元更新下一個 state。 初始狀態（initial state）為「Data State」，
+遇到「<」這個字元，就會將狀態改變為「Tag Open Sate」，
 接著 consume 英文字母 a-z ，便會觸發「Start Tag Token」的創建，而改變成「Tag Name State」。
 遇到「>」這個字元後，當前的 token 就會被排出，返回至「Data State」，繼續往下重複上述動作。
 https://ithelp.ithome.com.tw/articles/10156320
