@@ -23,3 +23,7 @@ Three Way Handshake 過後，才開始進入 HTTP Request 階段，最後才是�
 接著 consume 英文字母 a-z ，便會觸發「Start Tag Token」的創建，而改變成「Tag Name State」。
 遇到「>」這個字元後，當前的 token 就會被排出，返回至「Data State」，繼續往下重複上述動作。
 https://ithelp.ithome.com.tw/articles/10156320
+
+4. 我們需要先將 DOM 和 CSSOM 合併，也就是這一篇文章要談到的 Render-tree。Render-tree 是瀏覽器繪製最後結果到螢幕上必備的原件，
+因此它只會包括螢幕上可見的元素，其他最後不會顯示到螢幕上的東西都會自動排除
+
