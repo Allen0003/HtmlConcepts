@@ -1,3 +1,5 @@
+0. html5 has spec to tokenlize the tree. Before that there are different views or trees in different browsers. 
+
 1. TCP adopts 'sliding window' to make sure the data consistency.
 
 TCP 封包都有這幾個資訊: 
