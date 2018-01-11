@@ -29,3 +29,5 @@ https://ithelp.ithome.com.tw/articles/10156320
 4. 我們需要先將 DOM 和 CSSOM 合併，也就是這一篇文章要談到的 Render-tree。Render-tree 是瀏覽器繪製最後結果到螢幕上必備的原件，
 因此它只會包括螢幕上可見的元素，其他最後不會顯示到螢幕上的東西都會自動排除
 
+5. one ganit stylesheet is not good
+   mutiple files are better as browsers need to read whole file and then start passing it.
