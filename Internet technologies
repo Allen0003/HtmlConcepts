@@ -37,4 +37,5 @@ https://ithelp.ithome.com.tw/articles/10156320
    
    iii. <script src="myscripts.js"></script> it will block the rendering of the page (slow).
    
-   
+7. imperative => Jquery (How!! to do)
+   declarative ==> Angular or VueJS (What I want what!!)
