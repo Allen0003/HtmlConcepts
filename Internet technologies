@@ -31,3 +31,10 @@ https://ithelp.ithome.com.tw/articles/10156320
 
 5. one ganit stylesheet is not good
    mutiple files are better as browsers need to read whole file and then start passing it.
+   
+6. i. putting the css file in the top so we can fetch it quick   
+   ii. putting the javascript file in the bottom so hopefully at that moment we already construct most of the page
+   
+   iii. <script src="myscripts.js"></script> it will block the rendering of the page (slow).
+   
+   
